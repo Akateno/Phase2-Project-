@@ -3,13 +3,21 @@ import React from "react"
 
 function Search({searchTerm, onChangeSearch}) {
 
-    return (
+  function handleChange(event){
+    return onChangeSearch(event.target.value)
+  }
+    
+
+
+return (
       <div className="searchbar">
         <label htmlFor="search">Search Animals:</label>
         <input
           type="text"
           id="search"
           placeholder="Type a name to search..."
+          value={searchTerm}
+          onChange={handleChange}
         />
       </div>
     );
