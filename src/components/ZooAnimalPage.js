@@ -17,6 +17,15 @@ function ZooAnimalPage () {
     setAnimal([...animal, newAnimal])
    }
 
+    function handleAnimal (data) {
+        setAnimal(data)
+    }
+    useEffect(()=>{
+        fetch("https://zoo-animal-api.herokuapp.com/animals/rand")
+        .then(resp=>resp.json())
+        .then(data=>handleAnimal(data))
+    }, [])
+    
     return <div>
       <h1>This is the Zoo Animal Page</h1>
         <Search/>

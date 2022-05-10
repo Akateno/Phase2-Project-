@@ -11,6 +11,11 @@ function App() {
   
   console.log("hello")
   return (
+<<<<<<< HEAD
+    <div className="App">
+      <NavBar />
+      <ZooAnimalPage />
+=======
     <div>
       <NavBar/>
       <Switch>
@@ -26,6 +31,7 @@ function App() {
       </Switch>
       
       
+>>>>>>> 421c061f42290f17c3579801e5791ddeff065832
     </div>
   );
 }
