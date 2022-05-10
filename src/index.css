@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
 }
+.homePage{
+  background-color: aquamarine;
+}
 
 pageheader{
   font-size: 2.5em;
