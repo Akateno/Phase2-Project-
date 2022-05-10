@@ -1,7 +1,7 @@
 import React from "react"
 import ZooAnimalCard from "./ZooAnimalCard"
 
-function ZooAnimalList ({animals, }) {
+function ZooAnimalList ({animals}) {
     return (
     <div className="cards">
         {
