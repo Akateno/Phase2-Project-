@@ -18,7 +18,6 @@ function ZooAnimalForm ({handleAddAnimal}) {
   // fetch(`http://localhost:3000/toys`)
   //   .then(response => response.json())
   //   .then(data => {
-        
   //       console.log(data);
   //   });
 
@@ -34,17 +33,12 @@ function ZooAnimalForm ({handleAddAnimal}) {
          image,
          details,
       }),
-      
-
      })
      .then(r=>r.json())
      .then((newAnimal)=>{
       handleAddAnimal(newAnimal);
      })
    }
-
-
-
 
     return ( <div className="pageForm">
     <h2>New Animal</h2>
