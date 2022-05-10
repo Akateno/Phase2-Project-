@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "posts": [
     {
       "id": 1,
@@ -16,4 +17,26 @@
   "profile": {
     "name": "typicode"
   }
+=======
+  "toys": [
+    {
+      "id": 1,
+      "name": "Woody",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "likes": 8
+    },
+    {
+      "id": 2,
+      "name": "Buzz Lightyear",
+      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+      "likes": 14
+    },
+    {
+      "name": "Dog",
+      "image": "https://cdn.inprnt.com/thumbs/c5/18/c51893c4983f1d87440c8bde691df232.jpg?response-cache-control=max-age=2628000",
+      "details": "y",
+      "id": 3
+    }
+  ]
+>>>>>>> 421c061f42290f17c3579801e5791ddeff065832
 }
