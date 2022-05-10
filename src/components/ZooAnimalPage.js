@@ -1,12 +1,23 @@
-import React from "react"
-import ZooAnimalForm from "./ZooAnimalForm"
+import React, {useEffect, useState} from "react"
+
+import Search from "./Search"
 import ZooAnimalList from "./ZooAnimalList"
 
 function ZooAnimalPage () {
+    const [brews,setBrews]=useState([])
+
+     useEffect(()=>{
+     fetch("https://api.openbrewerydb.org/breweries")
+    .then((r)=>r.json())
+     .then((data)=>setBrews(data))
+   }, [])
+   
+
+
     return <div>
-        This is the ZooAnimalPage
-        <ZooAnimalForm />
-        <ZooAnimalList />
+      <h1>This is the Zoo Animal Page</h1>
+        <ZooAnimalList brews={brews}/>
+        <Search/>
     </div>
 }
 
