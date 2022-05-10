@@ -1,9 +1,18 @@
 import React from "react";
 
-function ZooAnimalCard({name}) {
+function ZooAnimalCard({name, lifeSpan, habitat, diet, image}) {
   return ( <li className="card">
-  <img src="https://i.chzbgr.com/thumb800/8184033792/h76CA816A/happy-birthday-meme-with-a-cats-head-in-a-pizza-slice" alt="El Catto" />
-  <h4>{name}</h4>
+  <img src={image} alt={name} width="500" height="600"/>
+  <h2>{name}</h2>
+  <ul>
+    <li>LifeSpan: {lifeSpan}</li>
+    <li>Habitat: {habitat}</li>
+    <li>Diet: {diet}</li>
+  </ul>
+
+
+
+
   {(true) ? (
     <button  className="primary"> Adopted</button>
   ) : (

@@ -1,14 +1,19 @@
 import React from "react"
 import ZooAnimalCard from "./ZooAnimalCard"
 
-function ZooAnimalList ({brews}) {
+function ZooAnimalList ({animals}) {
     return (
     <div className="cards">
         {
-        brews.map((brew)=>(
+        animals.map((animal)=>(
           <ZooAnimalCard
-          key={brew.id}
-          name={brew.name}
+          key={animal.id}
+          name={animal.name}
+          lifeSpan={animal.lifespan}
+          habitat={animal.habitat}
+          diet={animal.diet}
+          image={animal.image_link}
+          
         //   image={brew.image}
           />
         ))}

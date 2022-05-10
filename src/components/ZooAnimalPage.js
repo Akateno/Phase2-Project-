@@ -4,20 +4,21 @@ import Search from "./Search"
 import ZooAnimalList from "./ZooAnimalList"
 
 function ZooAnimalPage () {
-    const [brews,setBrews]=useState([])
+    const [animal,setAnimal]=useState([])
 
      useEffect(()=>{
-     fetch("https://api.openbrewerydb.org/breweries")
+     fetch("https://zoo-animal-api.herokuapp.com/animals/rand/10")
     .then((r)=>r.json())
-     .then((data)=>setBrews(data))
+     .then((data)=>setAnimal(data))
    }, [])
    
 
 
     return <div>
       <h1>This is the Zoo Animal Page</h1>
-        <ZooAnimalList brews={brews}/>
         <Search/>
+        <ZooAnimalList animals={animal}/>
+        
     </div>
 }
 
