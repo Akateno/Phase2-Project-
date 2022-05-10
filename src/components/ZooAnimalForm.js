@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-function ZooAnimalForm () {
+function ZooAnimalForm ({handleAddAnimal}) {
   const[name, setName]=useState("")
   const[image, setImage]=useState("")
   const[details, setDetails]=useState("")
@@ -14,7 +14,14 @@ function ZooAnimalForm () {
   function handleDetails(event){
     setDetails(event.target.value)
   }
-  
+  //make local copy of data
+  // fetch(`http://localhost:3000/toys`)
+  //   .then(response => response.json())
+  //   .then(data => {
+        
+  //       console.log(data);
+  //   });
+
   const handleSubmit = (e)=> {
      e.preventDefault();
      fetch("http://localhost:3000/toys", {
@@ -32,7 +39,7 @@ function ZooAnimalForm () {
      })
      .then(r=>r.json())
      .then((newAnimal)=>{
-       console.log(newAnimal);
+      handleAddAnimal(newAnimal);
      })
    }
 
