@@ -7,11 +7,8 @@ import Home from "./components/Home";
 import ZooList from './components/ZooList';
 
 function App() {
-
-  
-  console.log("hello")
   return (
-    <div>
+    <div className="container">
       <NavBar/>
       <Switch>
         <Route path="/adopt">
@@ -21,7 +18,7 @@ function App() {
           <ZooList/>
         </Route>
         <Route path="/">
-          <Home/>
+          <Home />
         </Route>
       </Switch>
       

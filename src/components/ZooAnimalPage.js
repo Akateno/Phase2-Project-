@@ -13,6 +13,7 @@ function ZooAnimalPage () {
     .then((r)=>r.json())
      .then((data)=>setAnimal(data))
    }, [])
+   console.log(animal)
    
    function handleAddAnimal(newAnimal){
     setAnimal([...animal, newAnimal])
@@ -23,8 +24,8 @@ function ZooAnimalPage () {
     anim.name.toLowerCase().includes(search.toLowerCase())
 )
 
-    return <div className="pageRender">
-      <h1 className="formHeader">This is the Zoo Animal Page</h1>
+    return <div className="animalPage" >
+      <h1 className="animalPageHeader" >Adoptable Animals</h1>
         <Search searchTerm={search} onChangeSearch={setSearch}/>
         <ZooAnimalForm handleAddAnimal={handleAddAnimal}/>
         <ZooAnimalList animals={displayedAnimals}/>

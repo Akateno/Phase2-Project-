@@ -11,8 +11,8 @@ function Search({searchTerm, onChangeSearch}) {
 
 return (
       <div className="searchbar">
-        <h3>Search Animal:</h3>
-        <input
+        <label htmlFor="search">Search Animals:</label>
+        <input width="500"
           type="text"
           id="search"
           placeholder="Type a name to search..."
