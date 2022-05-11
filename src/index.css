@@ -3,9 +3,24 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-weight: bold;
 }
-.homePage{
-  background-color: aquamarine;
+
+#search {
+  width: 500px;
+  height: 30px;
+}
+
+.homePage {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  font-family: "Georgia";
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 10px, 0;
+  background: seagreen;
 }
 
 pageheader{
@@ -14,6 +29,7 @@ pageheader{
   text-align: center;
   padding: 0.5rem 0;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -21,10 +37,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: ivory;
 }
 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.animalPage {
+  text-align: center;
+}
+
+.animalPageHeader {
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  font-family: "Georgia";
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 10px, 0;
+  background: seagreen;
+}
+
+.card {
+  color: black;
+  font-family: "Georgia";
+}
+
+.animalImg {
+  width: 500px;
+  height: 500px; 
+  background-size: contain;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid seagreen;
+}
+
+.primary {
+  width: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: darkblue;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
 }

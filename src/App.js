@@ -7,11 +7,8 @@ import ZooAnimalForm from './components/ZooAnimalForm';
 import Home from "./components/Home";
 
 function App() {
-
-  
-  console.log("hello")
   return (
-    <div>
+    <div className="container">
       <NavBar/>
       <Switch>
         <Route path="/adopt">
@@ -21,7 +18,7 @@ function App() {
           <ZooAnimalPage/>
         </Route>
         <Route path="/">
-          <Home/>
+          <Home />
         </Route>
       </Switch>
       

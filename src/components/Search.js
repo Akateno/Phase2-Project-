@@ -12,7 +12,7 @@ function Search({searchTerm, onChangeSearch}) {
 return (
       <div className="searchbar">
         <label htmlFor="search">Search Animals:</label>
-        <input
+        <input width="500"
           type="text"
           id="search"
           placeholder="Type a name to search..."
