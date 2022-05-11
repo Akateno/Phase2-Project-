@@ -17,8 +17,8 @@ function ZooAnimalPage () {
 anim.name.toLowerCase().includes(search.toLowerCase())
 )
 
-    return <div>
-      <h1>This is the Zoo Animal Page</h1>
+    return <div className="animalPage" >
+      <h1 className="animalPageHeader" >Adoptable Animals</h1>
         <Search searchTerm={search} onChangeSearch={setSearch}/>
         <ZooAnimalList animals={displayedAnimals}/>
         
