@@ -4,16 +4,53 @@
   display: flex;
   flex-direction: column;
 }
+.pageForm{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card{
+   text-align: center; 
+  padding: 1rem;
+  background-color: wheat;
+  border-radius: 10px;
+  border-style: dashed;
+  width: 50%;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+.pageRender{
+  background-color: white;
+}
+.cardPic{
+  border-radius: 25px;
+}
 .homePage{
+  background-color: #1E6B4E;
+  text-align: center;
+}
+.formHeader{
+  background-color: #1E6B4E;
+}
+.residentHeader{
+ 
   background-color: aquamarine;
 }
+/* .square {
+  height: 400px;
+  width: 380px;
+  background-color: rgb(32, 89, 195);
+  float:right;
+  margin-right:150px;
+} */
+/* .homeImage{
+  position: absolute;
+  padding-top: 110px;
+  margin-left:320px;
+  float:right;
+} */
 
-pageheader{
-  font-size: 2.5em;
-  font-weight: 900;
-  text-align: center;
-  padding: 0.5rem 0;
-}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -27,4 +64,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.navbar{
+  text-align: left;
 }

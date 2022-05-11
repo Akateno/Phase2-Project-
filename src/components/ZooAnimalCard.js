@@ -1,24 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 
 function ZooAnimalCard({name, lifeSpan, habitat, diet, image}) {
-  return ( <li className="card">
-  <img src={image} alt={name} width="500" height="600"/>
+    const [adopt, setAdopt]=useState(false)
+
+    function handleAdoption(){setAdopt((adopt)=> !adopt)}
+
+  return ( <div className="card">
+  <img className="cardPic"src={image} alt={name} width="500" height="600"/>
   <h2>{name}</h2>
   <ul>
-    <li>LifeSpan: {lifeSpan}</li>
-    <li>Habitat: {habitat}</li>
-    <li>Diet: {diet}</li>
+    <p><em><strong>LifeSpan :</strong> {lifeSpan}</em> </p>
+    <p><em><strong>Habitat:</strong> {habitat}</em></p>
+    <p><em><strong>Diet:</strong> {diet}</em></p>
   </ul>
 
-
-
-
-  {(true) ? (
-    <button  className="primary"> Adopted</button>
+  {(adopt) ? (
+    <button  onClick={handleAdoption} className="primary"> Adopted</button>
   ) : (
-    <button >Adopt</button>
+    <button onClick={handleAdoption} >Adopt</button>
   )}
-</li>)
+</div>)
   
 }
 

@@ -3,8 +3,8 @@ import NavBar from './components/NavBar';
 import ZooAnimalPage from './components/ZooAnimalPage';
 // import React, {useEffect} from "react";
 import {Route, Switch} from "react-router-dom"
-import ZooAnimalForm from './components/ZooAnimalForm';
 import Home from "./components/Home";
+import ZooList from './components/ZooList';
 
 function App() {
 
@@ -15,10 +15,10 @@ function App() {
       <NavBar/>
       <Switch>
         <Route path="/adopt">
-          <ZooAnimalForm/>
+        <ZooAnimalPage/>
         </Route>
-        <Route path="/petList">
-          <ZooAnimalPage/>
+        <Route path="/ResidentList">
+          <ZooList/>
         </Route>
         <Route path="/">
           <Home/>

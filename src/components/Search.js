@@ -11,7 +11,7 @@ function Search({searchTerm, onChangeSearch}) {
 
 return (
       <div className="searchbar">
-        <label htmlFor="search">Search Animals:</label>
+        <h3>Search Animal:</h3>
         <input
           type="text"
           id="search"

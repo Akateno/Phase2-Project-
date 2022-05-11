@@ -27,8 +27,8 @@ function NavBar () {
         <NavLink style={linkStyles}
         activeStyle={{
           background: "darkblue",
-        }}to="/petList">
-             Animals </NavLink>
+        }}to="/residentList">
+             Discover </NavLink>
     </div>
     )
 }
