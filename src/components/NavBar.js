@@ -7,7 +7,7 @@ function NavBar () {
         width: "60px",
         padding: "12px",
         margin: "6px 6px 6px",
-        background: "blue",
+        background: "green",
         textDecoration: "none",
         color: "white",
       };
@@ -16,17 +16,17 @@ function NavBar () {
     <div className="navbar">
         <NavLink to="/" exact style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "darkgreen",
         }}>
         Home</NavLink>
         <NavLink style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "darkgreen",
         }}to="/adopt"> 
         Adopt </NavLink>
         <NavLink style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "darkgreen",
         }}to="/residentList">
              Discover </NavLink>
     </div>
