@@ -14,23 +14,25 @@ function Zoolist () {
    
    const rAnimals = animal.map((animals)=> (
 
-    <div key={animals.name}>
+    <div className="animalPage" key={animals.name}>
       
-      <img src={animals.image_link} alt={animals.name} width="500" height="600"/>
-      <h2>{animals.name}</h2>
-      <ul>
-    <li>LifeSpan: {animals.lifespan}</li>
-    <li>Habitat: {animals.habitat}</li>
-    <li>Diet: {animals.diet}</li>
+      <img className="cardPic"
+      src={animals.image_link} alt={animals.name} width="500" height="600"/>
+      <h2 className="card">{animals.name}</h2>
+      <ul className="card">
+      <p><em><strong>LifeSpan :</strong> {animals.lifespan}</em></p>
+    <p><em><strong>Habitat:</strong> {animals.habitat}</em></p>
+    <p><em><strong>Diet:</strong> {animals.diet}</em></p>
       </ul>
     </div>
     ))
    
 
     return <div>
-      <h1 className="residentHeader">Local Zoo Residents</h1>
+      <h1 className="animalPageHeader">Local Zoo Residents</h1>
       {rAnimals}
     </div>
 }
 
 export default Zoolist; 
+

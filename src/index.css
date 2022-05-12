@@ -98,7 +98,18 @@ code {
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: darkblue;
+  background: seagreen;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.adopted {
+  width: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: yellowgreen;
   color: white;
   font-weight: bold;
   font-size: 15px;

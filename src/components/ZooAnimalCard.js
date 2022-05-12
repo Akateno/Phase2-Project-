@@ -15,9 +15,9 @@ function ZooAnimalCard({name, lifeSpan, habitat, diet, image}) {
   </ul>
 
   {(adopt) ? (
-    <button  onClick={handleAdoption} className="primary"> Adopted</button>
+    <button  onClick={handleAdoption} className="adopted"> Adopted!</button>
   ) : (
-    <button onClick={handleAdoption} >Adopt</button>
+    <button onClick={handleAdoption} className="primary">Adopt</button>
   )}
 </div>)
   
