@@ -9,7 +9,7 @@ function ZooAnimalCard({name, lifeSpan, habitat, diet, image}) {
   <img className="cardPic"src={image} alt={name} width="500" height="600"/>
   <h2>{name}</h2>
   <ul>
-    <p><em><strong>LifeSpan :</strong> {lifeSpan}</em> </p>
+    <p><em><strong>LifeSpan :</strong> {lifeSpan} years</em> </p>
     <p><em><strong>Habitat:</strong> {habitat}</em></p>
     <p><em><strong>Diet:</strong> {diet}</em></p>
   </ul>

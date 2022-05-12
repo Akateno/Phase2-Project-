@@ -10,8 +10,8 @@ function NavBar () {
         background: "green",
         textDecoration: "none",
         color: "white",
+      
       };
-
     return (
     <div className="navbar">
         <NavLink to="/" exact style={linkStyles}

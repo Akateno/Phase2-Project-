@@ -1,3 +1,16 @@
+.fixed-content {
+  top: 0;
+  bottom:0;
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+.pageTitle{
+  position:fixed;
+  padding-top: 250px;
+  padding-left: 950px;
+
+}
 
 .searchbar {
   padding: 1rem;
@@ -16,14 +29,138 @@
 }
 
 .homePage {
+  
+  height: 500px;
   font-size: 30px;
   text-align: center;
-  color: black;
+  color: whitesmoke;
   font-family: "Georgia";
   padding: 10px;
   border: 5px solid gray;
   margin: 10px, 0;
-  background: seagreen;
+  background-image: url("https://images.unsplash.com/photo-1457796120451-a8dd3a966a85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"); 
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: darkgreen;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 200px;
+}
+.exhibitTitle{
+  position:absolute;
+  color:black;
+  top:550px;
+  
+}
+.img1 {
+  position:fixed;
+  border-radius: 50%;
+  max-height: 300px;
+  top:600px;
+  right:70px;
+}
+.title1 {
+  position:fixed;
+  top:750px;
+  right:145px;
+}
+.img2 {
+  position:fixed;
+  border-radius: 50%;
+  max-height: 300px;
+  top:600px;
+  right:440px;
+}
+.title2 {
+  position:fixed;
+  top:750px;
+  right:530px;
+}
+.img3 {
+  position:fixed;
+  border-radius: 50%;
+  max-height: 300px;
+  top:600px;
+  left:70px;
+}
+
+.title3 {
+  position:fixed;
+  top:750px;
+  left:165px;
+}
+.img4 {
+  position:fixed;
+  border-radius: 50%;
+  max-height: 300px;
+  top:600px;
+  left:440px;
+}
+.title4 {
+  position:fixed;
+  top:750px;
+  left:520px;
+}
+.img5 {
+  position:fixed;
+  border-radius: 50%;
+  max-height: 300px;
+  top:600px;
+  left:800px;
+}
+.title5 {
+  position:fixed;
+  top:750px;
+  left:860px;
+}
+.exhibit{
+  height:1000px;
+}
+/* .imageq{
+  height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+.cardq{
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  
+} */
+.main-menu{
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  color:green;
+  font-size: 15px;
+}
+.logo{
+  
+  height: 150px;
+  width: 150px;
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+
+.homeheader{
+  position:absolute;
+  text-align: right;
+  font-size: 20px;
+  padding: 5px 5px;
+  color: rgb(6, 5, 5);
+  word-spacing: 15px;
 }
 /* .square {
   height: 400px;

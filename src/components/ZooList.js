@@ -20,7 +20,7 @@ function Zoolist () {
       src={animals.image_link} alt={animals.name} width="500" height="600"/>
       <h2 className="card">{animals.name}</h2>
       <ul className="card">
-      <p><em><strong>LifeSpan :</strong> {animals.lifespan}</em></p>
+      <p><em><strong>LifeSpan :</strong> {animals.lifespan} years</em></p>
     <p><em><strong>Habitat:</strong> {animals.habitat}</em></p>
     <p><em><strong>Diet:</strong> {animals.diet}</em></p>
       </ul>
