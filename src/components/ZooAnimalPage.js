@@ -13,8 +13,6 @@ function ZooAnimalPage () {
     .then((r)=>r.json())
      .then((data)=>setAnimal(data))
    }, [])
-   console.log(animal)
-   
    function handleAddAnimal(newAnimal){
     setAnimal([...animal, newAnimal])
   }
