@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from "react"
-
 import Search from "./Search"
-
 
 function Zoolist () {
     const [animal,setAnimal]=useState([])
