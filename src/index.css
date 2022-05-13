@@ -6,10 +6,13 @@
   overflow-x:hidden;
 }
 .pageTitle{
-  position:fixed;
+  position:absolute;
   padding-top: 250px;
   padding-left: 950px;
 
+}
+.container{
+  display:inline;
 }
 
 .searchbar {
@@ -60,31 +63,32 @@
   
 }
 .img1 {
-  position:fixed;
+  position:absolute;
   border-radius: 50%;
   max-height: 300px;
   top:600px;
   right:70px;
+  min-width: 200px;
 }
 .title1 {
-  position:fixed;
+  position:absolute;
   top:750px;
   right:145px;
 }
 .img2 {
-  position:fixed;
+  position:absolute;
   border-radius: 50%;
   max-height: 300px;
   top:600px;
   right:440px;
 }
 .title2 {
-  position:fixed;
+  position:absolute;
   top:750px;
   right:530px;
 }
 .img3 {
-  position:fixed;
+  position:absolute;
   border-radius: 50%;
   max-height: 300px;
   top:600px;
@@ -92,42 +96,33 @@
 }
 
 .title3 {
-  position:fixed;
+  position:absolute;
   top:750px;
   left:165px;
 }
 .img4 {
-  position:fixed;
+  position:absolute;
   border-radius: 50%;
   max-height: 300px;
   top:600px;
   left:440px;
 }
 .title4 {
-  position:fixed;
+  position:absolute;
   top:750px;
   left:520px;
 }
 .img5 {
-  position:fixed;
+  position:absolute;
   border-radius: 50%;
   max-height: 300px;
   top:600px;
   left:800px;
 }
 .title5 {
-  position:fixed;
+  position:absolute;
   top:750px;
   left:860px;
-}
-.exhibit{
-  height:1000px;
-}
-/* .imageq{
-  height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
 }
 
 .cardq{
@@ -162,20 +157,6 @@
   color: rgb(6, 5, 5);
   word-spacing: 15px;
 }
-/* .square {
-  height: 400px;
-  width: 380px;
-  background-color: rgb(32, 89, 195);
-  float:right;
-  margin-right:150px;
-} */
-/* .homeImage{
-  position: absolute;
-  padding-top: 110px;
-  margin-left:320px;
-  float:right;
-} */
-
 pageheader{
   font-size: 2.5em;
   font-weight: 900;
