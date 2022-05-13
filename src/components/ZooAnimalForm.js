@@ -41,9 +41,13 @@ function ZooAnimalForm ({handleAddAnimal}) {
      .then(r=>r.json())
      .then((newAnimal)=>{
       handleAddAnimal(newAnimal);
-      console.log(newAnimal)
      })
-     console.log(image)
+     setName("")
+     setImage("")
+     setLifespan("")
+     setHabitat("")
+     setDiet("")
+     
     
    }
 
